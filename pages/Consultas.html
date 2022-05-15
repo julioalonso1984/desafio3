@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/f4604a0199.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../estilos.css">
+    <title>consultas</title>
+</head>
+<body>
+    <!-- inicio encabezado -->
+    <header class="encabezado">
+        <div class="logo"></div>
+        <div class="titulo"><h1>Consultas</h1></div>
+        <div class="enlaces">
+            <ul>
+                <li> <a  href="../index.html">Inicio</a></li>
+                <li> <a href="./integrantes.html">Integrantes</a> </li>
+                <li> <a href="./denunciar.html">Denunciar</a> </li>
+                <li> <a href="./Legislacion.html">Legislacion</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- fin encabezado -->
+    <div class="consultas"></div>
+        <section class="consultasSub">
+            <form action="enviar.php" method="post">
+                <div class="formulario">
+                    <legend>Datos</legend>
+                    <br>
+                    <label for="">nombre</label>
+                    <br>
+                    <input class="nombre" type="text" style="background-color:transparent;" placeholder="escribe tu nombre" required>
+                    <br>
+                    <br>
+                    <label for="">apellido</label>
+                    <br>
+                    <input type="text" style="background-color:transparent;" placeholder="escribe tu apellido"><br>
+                    <br>
+                    <p>ingresa tu genero</p>
+                    <input class="genero" name="sexo" type="radio">
+                    <label  for="">hombre</label>
+                    <br>
+                    <input class="genero" name="sexo" type="radio">
+                    <label  for="">mujer</label>
+                    <br>
+                    <input class="genero" name="sexo" type="radio">
+                    <label for="">indefinido</label>
+                    <br>
+                    <br>
+                    <label for="">fecha de nacimiento</label>
+                    <br>
+                    <input type="date" style="background-color:transparent;">
+                    <br>
+                    <br>
+                    <p>Provincia</p>
+                    <select name="Lenguajes" id="provincia" style="background-color:transparent;">
+                        <option value="">Mendoza</option>
+                        <option value="">San Juan</option>
+                        <option value="">San Luis</option>
+                        <option value="">Neuquen</option>
+                    </select>
+                    <br>
+                    <br>
+                    <label for="correo">correo</label>
+                    <br>
+                    <input type="mail" name="correo" style="background-color:transparent;" placeholder="escribe tu mail"><br>
+                    <br>
+                    <label for="">telefono</label>
+                    <br>
+                    <input type="number" style="background-color:transparent;" placeholder="escribe tu telefono"><br>
+                    <br>
+                    <p>¿Cuál es tu consulta?</p>
+                    <textarea type="comentario" style="background-color:transparent;" name="comentario" id="comentario" cols="30" rows="5">¿Cuál es tu consulta?</textarea>
+                    <br>
+                    <br>
+                    <input type="checkbox">
+                    <label class="acepta" for="">acepta los terminos y condiciones</label>
+                    <br>
+                    <br>
+                    <input class="enviar1" style="background-color:transparent;" type="submit" value="enviar">
+                    <br>
+                    <br>
+                    <input style="background-color:transparent;" type="reset" value="borrar">
+                    <br>
+                </div>
+            </form>
+        </section>
+    </div>
+
+</body>
+</html>
